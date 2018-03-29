@@ -1,0 +1,86 @@
+body, html {
+    height: 100%;
+    background-color: #f0d7f7;
+}
+
+.card-img-top {
+  height:270px;
+}
+
+.card {
+  width: 20%;
+  margin: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.galleryCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.jumbotron {
+  width: 96%;
+  margin: auto;
+  background-image: url("yarnball.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumboText {
+  background-color:rgba(255, 255, 255,0.5);
+  padding: 10px;
+  width: 75%;
+  margin-left: 45px;
+  box-shadow: 7px 9px 23px 4px rgba(0,0,0,0.75);
+}
+
+.headerNav {
+  width: 96%;
+  margin: auto;
+  background-color: beige;
+}
+
+.aboutTab {
+  width: 96%;
+  margin: auto;
+  background-color: beige;
+  display: flex;
+  padding: 40px;
+}
+
+.aboutText {
+  width: 70%;
+}
+
+.aboutText p {
+  line-height: 2.3;
+  font-size: 23px;
+}
+
+.aboutTab img {
+  opacity: .7;
+  height: 300px;
+  margin-left: 50px;}
+
+.galleryTab {
+  width: 96%;
+  margin: auto;
+  background-color: beige;
+  padding: 40px;
+}
+
+.galleryTabText {
+  text-align: center;
+}
+
+.contactUs {
+  width: 96%;
+  margin: auto;
+  background-color: beige;
+  padding: 40px;
+}
