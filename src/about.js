@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import needle from './needle.png';
+import needle from './images/needle.png';
 
 export class About extends React.Component {
   render(){

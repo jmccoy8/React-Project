@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import pika from './pika.png';
-import mikka from './Make-ME.jpg';
-import flamingo from './flamingo.JPG';
-import baby from './baby.jpeg';
-import baymax from './Baymax.png';
-import fairy from './fairy.jpg';
-import unicorn from './unicorn.jpg';
-import skate from './skate.jpg';
-import prince from './prince.jpeg';
-import mimik from './mimic.jpg';
-import eleven from './eleven.jpg';
-import jig from './jiggly.jpeg';
+import pika from './images/pika.png';
+import mikka from './images/Make-ME.jpg';
+import flamingo from './images/flamingo.JPG';
+import baby from './images/baby.jpeg';
+import baymax from './images/Baymax.png';
+import fairy from './images/fairy.jpg';
+import unicorn from './images/unicorn.jpg';
+import skate from './images/skate.jpg';
+import prince from './images/prince.jpeg';
+import mimik from './images/mimic.jpg';
+import eleven from './images/eleven.jpg';
+import jig from './images/jiggly.jpeg';
 
 
 export class BlogCard extends React.Component {

@@ -1,77 +1,47 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-export class EssayForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: 'Please give a detailed description of the custom product you would like to order.'
-    };
-
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-  handleChange(event) {
-    this.setState({value: event.target.value});
-  }
-
-  handleSubmit(event) {
-    alert('An essay was submitted: ' + this.state.value);
-    event.preventDefault();
-  }
-
-  render() {
-    return (
-      <form onSubmit={this.handleSubmit}>
-        <label>
-          Custom Order:
-          <textarea value={this.state.value} onChange={this.handleChange} />
-        </label>
-        <input type="submit" value="Submit" />
-      </form>
-    );
-  }
-}
-
-export class FlavorForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {value: 'Pikachu'};
-
-    this.handleChange = this.handleChange.bind(this);
-  }
-
-  handleChange(event) {
-    this.setState({value: event.target.value});
-  }
-
-
-  render() {
-    return (
-      <form onSubmit={this.handleSubmit}>
-        <label>
-          What would you like to order:
-          <select value={this.state.value} onChange={this.handleChange}>
-            <option value="pikka">Pikachu</option>
-            <option value="mikka">Mini-Me</option>
-            <option value="flamingo">Flamingo</option>
-            <option value="baby">Baby Hat</option>
-            <option value="baymax">Baymax</option>
-            <option value="fairy">Fairy</option>
-            <option value="skate">Baby Skate Booties</option>
-            <option value="unicorn">Unicorn</option>
-            <option value="unicorn">Mini-Corn</option>
-            <option value="prince">Pup-Alike</option>
-            <option value="mimik">Mimikyu</option>
-            <option value="eleven">Stranger Things Eleven</option>
-            <option value="jig">Igglybuff</option>
-            <option value="jig">Jigglypuff</option>
-            <option value="jig">Wigglytuff</option>
-          </select>
-        </label>
-        <input type="submit" value="Submit" />
-      </form>
-    );
+export class CheckBoxes extends React.Component{
+  render(){
+    return(
+    <form>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email" />
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Gallery Selection</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option selected>Select from Dropdown</option>
+          <option>Pikachu</option>
+          <option>Mini-Me</option>
+          <option>Flamingo</option>
+          <option>Baby Hat</option>
+          <option>Baymax</option>
+          <option>Fairy</option>
+          <option>Unicorn</option>
+          <option>Baby Skates</option>
+          <option>Pup-Alike</option>
+          <option>Mimikyu</option>
+          <option>Eleven</option>
+          <option>Igglybuff</option>
+          <option>Jigglypuff</option>
+          <option>Wigglytuff</option>
+        </select>
+      </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Custom Order</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Please provide a detailed description of what you would like"></textarea>
+        </div>
+        <div className="formBottom">
+          <div class="form-group">
+            <label for="exampleInputFile">For Look-Alike Orders</label>
+            <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp" />
+            <small id="fileHelp" class="form-text text-muted">Please select an image with a clear view of the subject for the look-alike</small>
+          </div>
+          <button type="submit" className="btn btn-primary">Submit</button>
+      </div>
+  </form>
+  )
   }
 }

@@ -25,7 +25,7 @@ body, html {
 .jumbotron {
   width: 96%;
   margin: auto;
-  background-image: url("yarnball.png");
+  background-image: url("images/yarnball.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -84,3 +84,34 @@ body, html {
   background-color: beige;
   padding: 40px;
 }
+
+form {
+  background-color: #dec3c7;
+  padding: 2%;
+  border-radius: 12%;
+  margin-top: 2%;
+}
+
+.formBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10%;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #a17581;
+    border-color: #a17581;
+  }
+
+  form button {
+    height: 50px;
+    width: 150px;
+  }
+
+  .btn-primary:hover {
+    color: #a17581;
+    background-color: white;
+    border-color: lightgrey;
+  }
